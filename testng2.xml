@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="前程贷项目">
+    <test name="注册接口">
+        <classes>
+            <class name="com.lemon.cases.RegisterCase"></class>
+            <parameter name="sheetIndex" value="0"></parameter>
+        </classes>
+    </test>
+    <test name="登录接口">
+        <classes>
+            <class name="com.lemon.cases.LoginCase"></class>
+            <parameter name="sheetIndex" value="1"></parameter>
+        </classes>
+        <!-- //注意这个地方class name的路径默认是java 所以只要写com.lemon.XXX-->
+    </test>
+
+    <test name="新增项目">
+        <classes >
+            <class name="com.lemon.cases.AddCase"></class>
+            <parameter name="sheetIndex" value="3"></parameter>
+        </classes>
+    </test>
+
+</suite>
